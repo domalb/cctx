@@ -3,45 +3,48 @@
 #pragma once
 
 // Endianness
-// CCTX_LITTLE_ENDIAN
-// CCTX_BIG_ENDIAN
+//	CCTX_LITTLE_ENDIAN
+//	CCTX_BIG_ENDIAN
 
 // Architectures
-// CCTX_ARCH_X86
-// CCTX_ARCH_PPC
-// CCTX_ARCH_ARM
+//	CCTX_ARCH_X86
+//	CCTX_ARCH_PPC
+//	CCTX_ARCH_ARM
+//	CCTX_ARCH_MIPS
 
 // Platforms
-// CCTX_PLATFORM_DOS
-// CCTX_PLATFORM_WINDOWS
-// CCTX_PLATFORM_MAC
-// CCTX_PLATFORM_LINUX
-// CCTX_PLATFORM_X360
-// CCTX_PLATFORM_XONE
-// CCTX_PLATFORM_PS3
-// CCTX_PLATFORM_PS4
-// CCTX_PLATFORM_SWITCH
-// CCTX_PLATFORM_ANDROID
-// CCTX_PLATFORM_IOS_SIMULATOR : CCTX_PLATFORM_IOS defined
-// CCTX_PLATFORM_IOS_DEVICE : CCTX_PLATFORM_IOS defined
-// CCTX_PLATFORM_DS
+//	CCTX_PLATFORM_DOS
+//	CCTX_PLATFORM_WINDOWS
+//	CCTX_PLATFORM_MAC
+//	CCTX_PLATFORM_LINUX
+//	CCTX_PLATFORM_X360
+//	CCTX_PLATFORM_XONE
+//	CCTX_PLATFORM_PSP
+//	CCTX_PLATFORM_PS2
+//	CCTX_PLATFORM_PS3
+//	CCTX_PLATFORM_PS4
+//	CCTX_PLATFORM_SWITCH
+//	CCTX_PLATFORM_ANDROID
+//	CCTX_PLATFORM_IOS_SIMULATOR : CCTX_PLATFORM_IOS defined
+//	CCTX_PLATFORM_IOS_DEVICE : CCTX_PLATFORM_IOS defined
+//	CCTX_PLATFORM_DS
 
 
-#if defined _DURANGO
+#if (defined _DURANGO)
 
 #	define CCTX_PLATFORM_XONE
 #	define CCTX_LITTLE_ENDIAN
 #	define CCTX_ARCH_64
 #	define CCTX_ARCH_X86
 
-#elif defined _XBOX
+#elif (defined _XBOX)
 
 #	define CCTX_PLATFORM_X360
 #	define CCTX_BIG_ENDIAN
 #	define CCTX_ARCH_32
 #	define CCTX_ARCH_PPC
 
-#elif defined _WIN32
+#elif (defined _WIN32)
 
 #	define CCTX_PLATFORM_WINDOWS
 #	define CCTX_LITTLE_ENDIAN
@@ -52,13 +55,13 @@
 #		define CCTX_ARCH_32
 #	endif // _WIN64
 
-#elif defined __DOS__
+#elif (defined __DOS__)
 
 #	define CCTX_PLATFORM_DOS
 #	define CCTX_LITTLE_ENDIAN
 #	define CCTX_ARCH_X86
 
-#elif defined __ANDROID__
+#elif (defined __ANDROID__)
 
 #	define CCTX_PLATFORM_ANDROID
 #	define CCTX_LITTLE_ENDIAN
@@ -76,7 +79,7 @@
 #		else // __ARM_ARCH_XXX
 #			error unsupported Android ARM platform
 #		endif // __ARM_ARCH_XXX
-#	elif defined __i386__ // or __i386 or i386
+#	elif ((defined __i386__) || (defined __i386) || (defined i386))
 #		define CCTX_ARCH_X86
 #		define CCTX_ARCH_32
 #	elif defined __amd64__ // or __amd64
@@ -86,7 +89,7 @@
 #		error unsupported Android architecture
 #	endif // Android architecture
 
-#elif defined __gnu_linux__ // or __linux
+#elif ((defined __gnu_linux__) || (defined __linux))
 
 	// Warning Android is considered to be Linux, so Android test must be kept higher
 #	define CCTX_PLATFORM_LINUX
@@ -98,36 +101,47 @@
 #		define CCTX_ARCH_32
 #	endif // __LP64__
 
-#elif defined ARM9
+#elif ((defined __DS__) || (defined ARM9))
 
 #	define CCTX_PLATFORM_DS
 #	define CCTX_LITTLE_ENDIAN
 #	define CCTX_ARCH_ARM
 #	define CCTX_ARCH_32
 
-#elif defined SN_TARGET_PS3
+#elif ((defined __mips__) || (defined __MIPS__))
+
+#	if (defined __psp__) || (defined R3000) || (defined __R4000__))
+#		define CCTX_PLATFORM_PSP
+#		define CCTX_LITTLE_ENDIAN
+#		define CCTX_ARCH_MIPS
+#		define CCTX_ARCH_32
+#	else
+#		define CCTX_PLATFORM_PS2
+#		define CCTX_LITTLE_ENDIAN
+#		define CCTX_ARCH_MIPS
+#		define CCTX_ARCH_32
+#	endif
+
+#elif (defined __CELLOS_LV2__)
 
 #	define CCTX_PLATFORM_PS3
-#	define CCTX_PLATFORM_PS3_PPU
 #	define CCTX_BIG_ENDIAN
 #	define CCTX_ARCH_PPC
 #	define CCTX_ARCH_32
+#	if (defined __PPU__)
+#		define CCTX_PLATFORM_PS3_PPU
+#	elif (defined __SPU__)
+#		define CCTX_PLATFORM_PS3_SPU
+#	endif
 
-#elif defined SN_TARGET_PS3_SPU
-
-#	define CCTX_PLATFORM_PS3
-#	define CCTX_PLATFORM_PS3_SPU
-#	define CCTX_BIG_ENDIAN
-#	define CCTX_ARCH_32
-
-#elif defined __ORBIS__
+#elif (defined __ORBIS__)
 
 #	define CCTX_PLATFORM_PS4
 #	define CCTX_LITTLE_ENDIAN
 #	define CCTX_ARCH_PPC
 #	define CCTX_ARCH_64
 
-#elif defined __APPLE_CC__
+#elif (defined __APPLE_CC__)
 
 #	ifndef __TARGETCONDITIONALS__
 #		error TargetConditionals.h should be included
