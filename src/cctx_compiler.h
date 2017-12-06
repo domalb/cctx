@@ -46,7 +46,7 @@
 #elif (defined __DCC__)
 #	define CCTX_COMPILER_DIAB // Diab C/C++
 #elif (defined __IMAGECRAFT__)
-#	define CCTX_COMPILER_DIAB // ImageCraft C
+#	define CCTX_COMPILER_IMGC // ImageCraft C
 #elif (defined __CA__)
 #	define CCTX_COMPILER_CARM // KEIL CARM
 #elif (defined __C166__)
@@ -56,11 +56,11 @@
 #elif (defined __llvm__)
 #	define CCTX_COMPILER_LLVM // LLVM
 #elif (defined __HIGHC__)
-#	define CCTX_COMPILER_LLVM // MetaWare High C/C++
+#	define CCTX_COMPILER_HIGHC // MetaWare High C/C++
 #elif (defined _MRI)
 #	define CCTX_COMPILER_MRI // Microtec C/C++
 #elif ((defined __MINGW32__) || (defined __MINGW64__))
-#	define CCTX_COMPILER_MRI // MinGW
+#	define CCTX_COMPILER_MINGW // MinGW
 #else
 #	error unsupported compiler
 #endif

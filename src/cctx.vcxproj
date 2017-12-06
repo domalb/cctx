@@ -143,7 +143,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="cctx.h" />
+    <ClInclude Include="cctx_architecture.h" />
     <ClInclude Include="cctx_compiler.h" />
+    <ClInclude Include="cctx_platform.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cctx_checks.cpp" />
