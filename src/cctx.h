@@ -6,6 +6,12 @@
 #include "cctx_compiler.h"
 #include "cctx_platform.h"
 
+// sources
+// https://wiki.apache.org/stdcxx/Compilers
+// https://sourceforge.net/p/predef/wiki/Compilers/
+// http://nadeausoftware.com/articles/2012/02/c_c_tip_how_detect_processor_type_using_compiler_predefined_macros
+// https://opensource.apple.com/source/WTFEmbedded/WTFEmbedded-95.23/wtf/Platform.h.auto.html
+
 // #if defined CCTX_PLATFORM_WINDOWS
 // #   define CCTX_PATH_MAX MAX_PATH
 // #else // CCTX_PLATFORM_XXX
