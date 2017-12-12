@@ -28,8 +28,8 @@
 //	CCTX_COMPILER_MRI Microtec C/C++
 //	CCTX_COMPILER_MINGW32 MinGW http://www.mingw.org/
 //	CCTX_COMPILER_MINGW64 MinGW http://www.mingw.org/
-//	CCTX_COMPILER_SUNPROC Solaris Studio C https://www.oracle.com/sun/index.html
-//	CCTX_COMPILER_SUNPROCPP Solaris Studio C++ https://www.oracle.com/sun/index.html
+//	CCTX_COMPILER_SPC Solaris Studio C https://www.oracle.com/sun/index.html
+//	CCTX_COMPILER_SPCPP Solaris Studio C++ https://www.oracle.com/sun/index.html
 //	CCTX_COMPILER_IBMC IBM XL C http://www.ibm.com/software/ad/caix/
 //	CCTX_COMPILER_IBMCPP IBM XL C++ http://www.ibm.com/software/ad/caix/
 //	CCTX_COMPILER_PGI Portland Group PGI PGCC/PGPP
@@ -94,9 +94,9 @@
 #elif (defined __MINGW64__)
 #	define CCTX_COMPILER_MINGW64
 #elif (defined __SUNPRO_C)
-#	define CCTX_COMPILER_SUNPROC
+#	define CCTX_COMPILER_SPC
 #elif (defined __SUNPRO_CC)
-#	define CCTX_COMPILER_SUNPROCPP
+#	define CCTX_COMPILER_SPCPP
 #elif (defined __IBMC__)
 #	define CCTX_COMPILER_IBMC
 #elif (defined __IBMCPP__)
