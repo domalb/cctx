@@ -2,7 +2,6 @@
 #define _CCTX_ARCHITECTURE_H
 #pragma once
 
-
 // Endianness
 //	CCTX_ARCH_ENDIAN_LITTLE
 //	CCTX_ARCH_ENDIAN_BIG

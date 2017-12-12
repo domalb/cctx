@@ -9,7 +9,7 @@
 // sources
 // https://wiki.apache.org/stdcxx/Compilers
 // https://sourceforge.net/p/predef/wiki/Compilers/
-// http://nadeausoftware.com/articles/2012/02/c_c_tip_how_detect_processor_type_using_compiler_predefined_macros
+// http://nadeausoftware.com/articles/c_c
 // https://opensource.apple.com/source/WTFEmbedded/WTFEmbedded-95.23/wtf/Platform.h.auto.html
 
 // #if defined CCTX_PLATFORM_WINDOWS
