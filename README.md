@@ -1,2 +1,2 @@
-# cctx
+# C Context (CCTX)
 Get basic knowledge of your C/C++ context : compiler, architecture, language, features...
