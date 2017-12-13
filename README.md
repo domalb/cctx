@@ -2,7 +2,7 @@
 Get basic knowledge of your C/C++ context : compiler, architecture, language, features...
 
 ## Compilers
-include cctx_compiler.h and detect following compilers
+Include cctx_compiler.h and detect following compilers
  * Clang https://clang.llvm.org/
  * GCC https://gcc.gnu.org/
  * Microsoft Visual C++ https://www.visualstudio.com/vs/cplusplus/
@@ -37,3 +37,30 @@ include cctx_compiler.h and detect following compilers
  * USL C https://bellard.org/tcc/
  * Watcom C++ http://openwatcom.com/
  * SAS/C https://www.sas.com
+ 
+## Architecture
+Include cctx_architecture.h and detect the architecture the code is compiled for
+ * x86
+ * Itanium 64
+ * 68K
+ * PowerPC
+ * Cell PPU
+ * Cell SPU
+ * ARM
+ * MIPS
+ * APLPHA
+ * SPARC
+ * Blackfin http://www.analog.com/en/products/landing-pages/001/blackfin-architecture.html
+ * System/370 http://www-03.ibm.com/ibm/history/exhibits/mainframe/mainframe_PR370.html
+ * System/Z https://www.ibm.com/it-infrastructure/z
+
+With information regarding to endianness (either little or big) and pointer size (2, 4 or 8)
+
+## Language
+Include cctx_language.h and detect language currently compiled
+ * Assembly (GCC preprocessing)
+ * C
+ * C++
+ * C++/CLI
+ * C++/CX
+ * Objective-C
