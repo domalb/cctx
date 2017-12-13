@@ -46,8 +46,8 @@ Include cctx_architecture.h and detect the architecture your code is compiled fo
  * PowerPC
  * Cell PPU
  * Cell SPU
- * ARM
- * MIPS
+ * ARM https://www.arm.com/
+ * MIPS https://www.mips.com/
  * APLPHA
  * SPARC
  * Blackfin http://www.analog.com/en/products/landing-pages/001/blackfin-architecture.html
