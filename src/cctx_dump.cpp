@@ -1,12 +1,14 @@
 #include "cctx.h"
 
 // Endianness
-#if defined CCTX_ARCH_ENDIAN_LITTLE
-#	pragma message ("CCTX_ARCH_ENDIAN_LITTLE defined")
-#elif defined CCTX_ARCH_ENDIAN_BIG
-#	pragma message ("CCTX_ARCH_ENDIAN_BIG defined")
-#elif defined CCTX_ARCH_ENDIAN_BI
-#	pragma message ("CCTX_ARCH_ENDIAN_BI defined")
+#if defined CCTX_ENDIAN_LITTLE
+#	pragma message ("CCTX_ENDIAN_LITTLE defined")
+#elif defined CCTX_ENDIAN_BIG
+#	pragma message ("CCTX_ENDIAN_BIG defined")
+#elif defined CCTX_ENDIAN_MIDDLE_LITTLE
+#	pragma message ("CCTX_ENDIAN_MIDDLE_LITTLE defined")
+#elif defined CCTX_ENDIAN_MIDDLE_BIG
+#	pragma message ("CCTX_ENDIAN_MIDDLE_BIG defined")
 #else
 #	pragma message ("CCTX : no endianness defined")
 #endif

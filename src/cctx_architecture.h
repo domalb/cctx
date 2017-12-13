@@ -2,11 +2,6 @@
 #define _CCTX_ARCHITECTURE_H
 #pragma once
 
-// Endianness
-//	CCTX_ARCH_ENDIAN_LITTLE
-//	CCTX_ARCH_ENDIAN_BIG
-//	CCTX_ARCH_ENDIAN_BI
-
 // Pointer size
 //	CCTX_ARCH_PTR_SIZE_2
 //	CCTX_ARCH_PTR_SIZE_4
@@ -29,38 +24,29 @@
 
 #if ((defined _M_I86) || ((defined _M_IX86) && (!defined __386__)))
 #	define CCTX_ARCH_X86
-#	define CCTX_ARCH_ENDIAN_LITTLE
 #	define CCTX_ARCH_PTR_SIZE_2
 #elif ((defined _M_IX86) || (defined __X86__) || (defined _X86_) || (defined __I86__) || (defined __i386__) || (defined __i386) || (defined __386) || (defined __IA32__) || (defined __INTEL__) || (defined __THW_INTEL__))
 #	define CCTX_ARCH_X86
-#	define CCTX_ARCH_ENDIAN_LITTLE
 #	define CCTX_ARCH_PTR_SIZE_4
 #elif ((defined _M_X64) || (defined _M_AMD64) || (defined __amd64) || (defined __amd64__) || (defined __x86_64) || (defined __x86_64__))
 #	define CCTX_ARCH_X86
-#	define CCTX_ARCH_ENDIAN_LITTLE
 #	define CCTX_ARCH_PTR_SIZE_8
 #elif ((defined _M_IA64) || (defined _IA64) || (defined __ia64__) || (defined __ia64) || (defined __itanium__))
 #	define CCTX_ARCH_IA64
-#	define CCTX_ARCH_ENDIAN_LITTLE
 #	define CCTX_ARCH_PTR_SIZE_8
 #elif ((defined __m68k__) || (defined __MC68K__) || (defined M68000))
 #	define CCTX_ARCH_68K
-#	define CCTX_ARCH_ENDIAN_BIG
 #	define CCTX_ARCH_PTR_SIZE_4
 #elif ((defined _M_MRX000) || (defined __MIPS__) || (defined _MIPS_) || (defined __mips__) || (defined mips))
 #	define CCTX_ARCH_MIPS
-#	define CCTX_ARCH_ENDIAN_LITTLE
 	// Endianness to be defined according to the processor
 #elif ((defined __powerpc64__) || (defined __PPC64__) || (defined __ppc64__) || (defined _ARCH_PPC64))
 #	define CCTX_ARCH_PPC
-#	define CCTX_ARCH_ENDIAN_BIG
 #	define CCTX_ARCH_PTR_SIZE_8
 #elif ((defined _M_PPC) || (defined _M_PPCBE) || (defined _PPC_) || (defined __POWERPC__) || (defined __powerpc__) || (defined __powerpc) || (defined _ARCH_PPC) || (defined __ppc) || (defined __PPCGECKO__))
 #	define CCTX_ARCH_PPC
-#	define CCTX_ARCH_ENDIAN_BIG
 #	define CCTX_ARCH_PTR_SIZE_4
 #elif (defined __CELLOS_LV2__)
-#	define CCTX_ARCH_ENDIAN_BIG
 #	define CCTX_ARCH_PTR_SIZE_4
 #	if (defined __PPU__)
 #		define CCTX_ARCH_CELL_PPU
@@ -105,15 +91,12 @@
 #	endif
 #elif ((defined __alpha__) || (defined __alpha))
 #	define CCTX_ARCH_ALPHA
-#	define CCTX_ARCH_ENDIAN_BI
 #	define CCTX_ARCH_PTR_SIZE_8
 #elif ((defined __BFIN__) || (defined __bfin))
 #	define CCTX_ARCH_BLACKFIN
-#	define CCTX_ARCH_ENDIAN_LITTLE
 #	define CCTX_ARCH_PTR_SIZE_4
 #elif ((defined __sparc__) || (defined __sparc))
 #	define CCTX_ARCH_SPARC
-#	define CCTX_ARCH_ENDIAN_BI
 #	if ((defined __sparc64__) || (defined __arch64__))
 #		define CCTX_ARCH_PTR_SIZE_8
 #	else
@@ -121,11 +104,9 @@
 #	endif
 #elif ((defined __370__) || (defined __THW_370__))
 #	define CCTX_ARCH_SYSTEM370
-#	define CCTX_ARCH_ENDIAN_BIG
 #	define CCTX_ARCH_PTR_SIZE_4
 #elif ((defined __zarch__) || (defined __SYSC_ZARCH__) || (defined __s390__) || (defined __s390x__))
 #	define CCTX_ARCH_SYSTEMZ
-#	define CCTX_ARCH_ENDIAN_BIG
 // Endianness to be defined according to the processor
 #	if (defined __s390x__)
 #		define CCTX_ARCH_PTR_SIZE_8

@@ -3,6 +3,7 @@
 #pragma once
 
 #include "cctx_architecture.h"
+#include "cctx_endian.h"
 #include "cctx_compiler.h"
 #include "cctx_platform.h"
 #include "cctx_language.h"

@@ -12,7 +12,7 @@
 
 #if defined __ASSEMBLER__
 #	define CCTX_LANGUAGE_ASM
-#if defined __OBJC__
+#elif defined __OBJC__
 #	define CCTX_LANGUAGE_OBJC
 #elif defined __cplusplus_cli
 #	define CCTX_LANGUAGE_CPPCLI

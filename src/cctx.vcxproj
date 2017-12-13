@@ -145,6 +145,7 @@
     <ClInclude Include="cctx.h" />
     <ClInclude Include="cctx_architecture.h" />
     <ClInclude Include="cctx_compiler.h" />
+    <ClInclude Include="cctx_endian.h" />
     <ClInclude Include="cctx_language.h" />
     <ClInclude Include="cctx_platform.h" />
   </ItemGroup>
