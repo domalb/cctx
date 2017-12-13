@@ -2,7 +2,7 @@
 Get basic knowledge of your C/C++ context : compiler, architecture, language, features...
 
 ## Compilers
-Include cctx_compiler.h and detect following compilers
+Include cctx_compiler.h and detect the compiler your code is compiled for
  * Clang https://clang.llvm.org/
  * GCC https://gcc.gnu.org/
  * Microsoft Visual C++ https://www.visualstudio.com/vs/cplusplus/
@@ -39,7 +39,7 @@ Include cctx_compiler.h and detect following compilers
  * SAS/C https://www.sas.com
  
 ## Architecture
-Include cctx_architecture.h and detect the architecture the code is compiled for
+Include cctx_architecture.h and detect the architecture your code is compiled for
  * x86
  * Itanium 64
  * 68K
@@ -54,7 +54,14 @@ Include cctx_architecture.h and detect the architecture the code is compiled for
  * System/370 http://www-03.ibm.com/ibm/history/exhibits/mainframe/mainframe_PR370.html
  * System/Z https://www.ibm.com/it-infrastructure/z
 
-With information regarding to endianness (either little or big) and pointer size (2, 4 or 8)
+With information regarding to pointer size (2, 4 or 8)
+
+## Endianness
+Include cctx_endian.h and detect the endianness your code is compiled for
+ * Little
+ * Big
+ * Middle-little
+ * Middle-big
 
 ## Language
 Include cctx_language.h and detect language currently compiled
