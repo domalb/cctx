@@ -26,7 +26,13 @@
 #	elif (__BYTE_ORDER == __LITTLE_ENDIAN)
 #		define CCTX_ENDIAN_BIG
 #	elif (__BYTE_ORDER == __PDP_ENDIAN)
-#		define CCTX_ENDIAN_PDP
+#		define CCTX_ENDIAN_MIDDLE_LITTLE
+#	endif
+#elif (defined _BYTE_ORDER)
+#	if (_BYTE_ORDER == _BIG_ENDIAN)
+#		define CCTX_ENDIAN_LITTLE
+#	elif (_BYTE_ORDER == _LITTLE_ENDIAN)
+#		define CCTX_ENDIAN_BIG
 #	endif
 #else
 #	if ((defined __LITTLE_ENDIAN__) || (defined __ARMEL__) || (defined __THUMBEL__) || (defined __AARCH64EL__) || (defined __MIPSEL__) || (defined __MIPSEL) || (defined _MIPSEL))
