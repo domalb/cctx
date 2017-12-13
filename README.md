@@ -18,7 +18,7 @@ include cctx_compiler.h and detect following compilers
  * Compaq C/C++ http://www.cism.ucl.ac.be/Equipements/Logiciels/Manuels/Compaq/C++/ugu/u57.htm
  * Coverity C/C++ Static Analyzer https://scan.coverity.com/
  * Diab C/C++ https://www.windriver.com/products/development-tools/
- * ImageCraft C
+ * ImageCraft C https://www.imagecraft.com/
  * KEIL CARM http://www.keil.com/arm/carm.asp
  * KEIL C166 http://www.keil.com/c166/
  * KEIL C51 http://www.keil.com/c51/
