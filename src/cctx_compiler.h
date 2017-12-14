@@ -3,8 +3,10 @@
 #pragma once
 
 // Compiler
-//	CCTX_COMPILER_CLANG Clang https://clang.llvm.org/
+//	CCTX_COMPILER_CLANG Clang
+//	CCTX_COMPILER_LLVM_CLANG LLVM-Clang
 //	CCTX_COMPILER_GCC GCC
+//	CCTX_COMPILER_LLVM_GCC LLVM-GCC
 //	CCTX_COMPILER_MSVC Microsoft Visual C++
 //	CCTX_COMPILER_BTC Borland Turbo C http://cc.embarcadero.com/item/25636
 //	CCTX_COMPILER_BCPP Borland C++ https://www.embarcadero.com/free-tools/ccompiler
@@ -45,6 +47,8 @@
 
 #if (defined __clang__)
 #	define CCTX_COMPILER_CLANG
+#	if (defined __llvm__)
+#		define CCTX_COMPILER_LLVM_CLANG
 #elif ((defined __GNUC__) || (defined __GCC__))
 #	define CCTX_COMPILER_GCC
 #elif (defined _MSC_VER)
