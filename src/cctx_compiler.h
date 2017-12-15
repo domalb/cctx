@@ -45,10 +45,17 @@
 //	CCTX_COMPILER_WC Watcom C++ http://openwatcom.com/
 //	CCTX_COMPILER_SASC SAS/C https://www.sas.com
 
-#if (defined __clang__)
+#if (defined __clang__) // Clang defines __GNUC__
 #	define CCTX_COMPILER_CLANG
 #	if (defined __llvm__)
 #		define CCTX_COMPILER_LLVM_CLANG
+#	endif
+#elif ((defined __INTEL_COMPILER) || (defined __ICL)) // ILC defines __GNUC__
+#	define CCTX_COMPILER_ICL
+#elif (defined __MINGW32__) // MinGW32 defines __GNUC__
+#	define CCTX_COMPILER_MINGW32
+#elif (defined __MINGW64__) // MinGW64 defines __GNUC__
+#	define CCTX_COMPILER_MINGW64
 #elif ((defined __GNUC__) || (defined __GCC__))
 #	define CCTX_COMPILER_GCC
 #elif (defined _MSC_VER)
@@ -67,8 +74,6 @@
 #	define CCTX_COMPILER_CYGWIN
 #elif (defined __COMO__)
 #	define CCTX_COMPILER_COMO
-#elif ((defined __INTEL_COMPILER) || (defined __ICL))
-#	define CCTX_COMPILER_ICL
 #elif (defined __DMC__)
 #	define CCTX_COMPILER_DMC
 #elif (defined __DECC)
@@ -93,10 +98,6 @@
 #	define CCTX_COMPILER_HIGHC
 #elif (defined _MRI)
 #	define CCTX_COMPILER_MRI
-#elif (defined __MINGW32__)
-#	define CCTX_COMPILER_MINGW32
-#elif (defined __MINGW64__)
-#	define CCTX_COMPILER_MINGW64
 #elif (defined __SUNPRO_C)
 #	define CCTX_COMPILER_SPC
 #elif (defined __SUNPRO_CC)

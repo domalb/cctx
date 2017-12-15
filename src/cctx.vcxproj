@@ -149,6 +149,7 @@
     <ClInclude Include="cctx_features.h" />
     <ClInclude Include="cctx_language.h" />
     <ClInclude Include="cctx_platform.h" />
+    <ClInclude Include="cctx_utils.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cctx_checks.cpp" />

@@ -15,6 +15,8 @@
 // http://nadeausoftware.com/articles/c_c
 // https://opensource.apple.com/source/WTFEmbedded/WTFEmbedded-95.23/wtf/Platform.h.auto.html
 // http://en.cppreference.com/w/User:D41D8CD98F/feature_testing_macros
+// https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_71/rzarf/ilcrpmcr.htm#ilcrpmcr
+// https://chromium.googlesource.com/external/v8/+/bleeding_edge/include/v8config.h
 
 // #if defined CCTX_PLATFORM_WINDOWS
 // #   define CCTX_PATH_MAX MAX_PATH

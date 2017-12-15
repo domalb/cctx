@@ -29,7 +29,9 @@
 //	CCTX_PLATFORM_IOS
 //		CCTX_PLATFORM_IOS_SIMULATOR
 //		CCTX_PLATFORM_IOS_DEVICE
+//	CCTX_PLATFORM_NACL
 //	CCTX_PLATFORM_BEOS
+//	CCTX_PLATFORM_QNX
 //	CCTX_PLATFORM_AMIGAOS
 
 
@@ -65,8 +67,12 @@
 #	else
 #		error unsupported Apple platform
 #	endif
+#elif (defined __native_client__)
+#	define CCTX_PLATFORM_NACL
 #elif (defined __BEOS__)
 #	define CCTX_PLATFORM_BEOS
+#elif (defined __QNXNTO__)
+#	define CCTX_PLATFORM_QNX
 #elif ((defined __unix__) || (defined __unix))
 #	define CCTX_PLATFORM_UNIX
 #	if (((defined __sun__) || (defined __sun) || (defined sun)) && ((defined __svr4__) || (defined __SVR4)))
