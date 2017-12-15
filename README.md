@@ -1,7 +1,7 @@
 # C Context (CCTX)
-Get basic knowledge of your C/C++ context : compiler, architecture, language, features...
+Get basic knowledge of your C/C++ context : compiler, architecture, language, platform, features...
 
-## Compilers
+## Compiler
 Include cctx_compiler.h and detect the compiler your code is compiled for
  * Clang https://clang.llvm.org/
  * GCC https://gcc.gnu.org/
@@ -71,3 +71,36 @@ Include cctx_language.h and detect language currently compiled
  * C++/CLI
  * C++/CX
  * Objective-C
+
+## Platform
+Include cctx_platform.h and detect the platform (OS) your code is compiled for
+ * DOS
+ * Windows
+ * MacOS
+ * Linux
+ * MinGW
+ * Solaris
+ * SunOS
+ * HPUX
+ * BSD Unix
+ * AIX
+ * QNX
+ * Cygwin
+ * BeOS
+ * XBox360
+ * XBoxOne
+ * DS
+ * GameCube
+ * Wii
+ * Switch
+ * PSP
+ * PS2
+ * PS3
+ * PS4
+ * Android
+ * iOS Simulator
+ * iOS Device
+ * Chrome Native Client
+ * AmigaOS
+ 
+ ## Features
