@@ -9,6 +9,7 @@
 //	CCTX_COMPILER_LLVM_GCC LLVM-GCC
 //	CCTX_COMPILER_MSVC Microsoft Visual C++
 //	CCTX_COMPILER_BTC Borland Turbo C http://cc.embarcadero.com/item/25636
+//	CCTX_COMPILER_BC Borland C https://www.embarcadero.com/free-tools/ccompiler
 //	CCTX_COMPILER_BCPP Borland C++ https://www.embarcadero.com/free-tools/ccompiler
 //	CCTX_COMPILER_SNC SN
 //	CCTX_COMPILER_MWC Metrowerks CodeWarrior https://www.nxp.com/support/developer-resources/software-development-tools/codewarrior-development-tools:CW_HOME
@@ -44,6 +45,9 @@
 //	CCTX_COMPILER_USLC USL C https://bellard.org/tcc/
 //	CCTX_COMPILER_WC Watcom C++ http://openwatcom.com/
 //	CCTX_COMPILER_SASC SAS/C https://www.sas.com
+//	CCTX_COMPILER_CG CodeGear
+//	CCTX_COMPILER_GHS Greenhills C++
+//	CCTX_COMPILER_SGI SGI MIPSpro C++
 
 #if (defined __clang__) // Clang defines __GNUC__
 #	define CCTX_COMPILER_CLANG
@@ -58,11 +62,13 @@
 #	define CCTX_COMPILER_MINGW64
 #elif ((defined __GNUC__) || (defined __GCC__))
 #	define CCTX_COMPILER_GCC
-#elif (defined _MSC_VER)
-#	define CCTX_COMPILER_MSVC
+#elif (defined __CODEGEARC__ ) // MinGW64 defines __BORLANDC__
+#	define CCTX_COMPILER_CG
 #elif (defined __TURBOC__ )
 #	define CCTX_COMPILER_BTC
-#elif ((defined __BCPLUSPLUS__) || (defined __BORLANDC__))
+#elif ((defined __BORLANDC) || (defined __BORLANDC__)) // __BCPLUSPLUS__ also defines __BORLANDC__
+#	define CCTX_COMPILER_BC
+#elif (defined __BCPLUSPLUS__)
 #	define CCTX_COMPILER_BCPP
 #elif (defined __SNC__)
 #	define CCTX_COMPILER_SNC
@@ -122,10 +128,16 @@
 #	define CCTX_COMPILER_TC
 #elif (defined __USLC__)
 #	define CCTX_COMPILER_USLC
-#elif ((defined __SASC__) || (defined __SASC))
+#elif (defined __WATCOMC__)
 #	define CCTX_COMPILER_WC
-#elif (defined CCTX_COMPILER_SASC)
+#elif ((defined __SASC__) || (defined __SASC))
 #	define CCTX_COMPILER_SASC
+#elif (defined _MSC_VER)
+#	define CCTX_COMPILER_MSVC
+#elif (defined __ghs)
+#	define CCTX_COMPILER_GHS
+#elif (defined __sgi)
+#	define CCTX_COMPILER_SGI
 #else
 #	error unsupported compiler
 #endif
