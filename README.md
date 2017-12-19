@@ -37,6 +37,8 @@ Include cctx_compiler.h and detect the compiler your code is compiled for
  * USL C https://bellard.org/tcc/
  * Watcom C++ http://openwatcom.com/
  * SAS/C https://www.sas.com
+ * Greenhills Embedded C++ https://www.ghs.com/ec++.html
+ * SGI MIPSpro C++ 
  
 ## Architecture
 Include cctx_architecture.h and detect the architecture your code is compiled for
