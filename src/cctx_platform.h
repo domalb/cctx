@@ -51,7 +51,7 @@
 #	define CCTX_PLATFORM_MINGW
 #elif (defined __APPLE_CC__) // must be before Unix
 #	ifndef __TARGETCONDITIONALS__
-#		error TargetConditionals.h should be included
+#       include <TargetConditionals.h>
 #	endif
 #	if TARGET_OS_IPHONE
 #		define CCTX_PLATFORM_IOS

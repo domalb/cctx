@@ -122,85 +122,85 @@
 
 // Compiler
 #if defined CCTX_COMPILER_CLANG
-#		pragma message ("CCTX_COMPILER_CLANG defined")
+#	pragma message ("CCTX_COMPILER_CLANG defined")
 #elif defined CCTX_COMPILER_GCC
-#		pragma message ("CCTX_COMPILER_GCC defined")
+#	pragma message ("CCTX_COMPILER_GCC defined")
 #elif defined CCTX_COMPILER_MSVC
-#		pragma message ("CCTX_COMPILER_MSVC defined")
+#	pragma message ("CCTX_COMPILER_MSVC defined")
 #elif defined CCTX_COMPILER_BTC
-#		pragma message ("CCTX_COMPILER_BTC defined")
+#	pragma message ("CCTX_COMPILER_BTC defined")
 #elif defined CCTX_COMPILER_BCPP
-#		pragma message ("CCTX_COMPILER_BCPP defined")
+#	pragma message ("CCTX_COMPILER_BCPP defined")
 #elif defined CCTX_COMPILER_SNC
-#		pragma message ("CCTX_COMPILER_SNC defined")
+#	pragma message ("CCTX_COMPILER_SNC defined")
 #elif defined CCTX_COMPILER_MWC
-#		pragma message ("CCTX_COMPILER_MWC defined")
+#	pragma message ("CCTX_COMPILER_MWC defined")
 #elif defined CCTX_COMPILER_CVC
-#		pragma message ("CCTX_COMPILER_CVC defined")
+#	pragma message ("CCTX_COMPILER_CVC defined")
 #elif defined CCTX_COMPILER_CYGWIN
-#		pragma message ("CCTX_COMPILER_CYGWIN defined")
+#	pragma message ("CCTX_COMPILER_CYGWIN defined")
 #elif defined CCTX_COMPILER_COMO
-#		pragma message ("CCTX_COMPILER_COMO defined")
+#	pragma message ("CCTX_COMPILER_COMO defined")
 #elif defined CCTX_COMPILER_ICL
-#		pragma message ("CCTX_COMPILER_ICL defined")
+#	pragma message ("CCTX_COMPILER_ICL defined")
 #elif defined CCTX_COMPILER_DMC
-#		pragma message ("CCTX_COMPILER_DMC defined")
+#	pragma message ("CCTX_COMPILER_DMC defined")
 #elif defined CCTX_COMPILER_DECC
-#		pragma message ("CCTX_COMPILER_DECC defined")
+#	pragma message ("CCTX_COMPILER_DECC defined")
 #elif defined CCTX_COMPILER_DECCPP
-#		pragma message ("CCTX_COMPILER_DECCPP defined")
+#	pragma message ("CCTX_COMPILER_DECCPP defined")
 #elif defined CCTX_COMPILER_COV
-#		pragma message ("CCTX_COMPILER_COV defined")
+#	pragma message ("CCTX_COMPILER_COV defined")
 #elif defined CCTX_COMPILER_DIAB
-#		pragma message ("CCTX_COMPILER_DIAB defined")
+#	pragma message ("CCTX_COMPILER_DIAB defined")
 #elif defined CCTX_COMPILER_IMGC
-#		pragma message ("CCTX_COMPILER_IMGC defined")
+#	pragma message ("CCTX_COMPILER_IMGC defined")
 #elif defined CCTX_COMPILER_CARM
-#		pragma message ("CCTX_COMPILER_CARM defined")
+#	pragma message ("CCTX_COMPILER_CARM defined")
 #elif defined CCTX_COMPILER_C166
-#		pragma message ("CCTX_COMPILER_C166 defined")
+#	pragma message ("CCTX_COMPILER_C166 defined")
 #elif defined CCTX_COMPILER_C51
-#		pragma message ("CCTX_COMPILER_C51 defined")
+#	pragma message ("CCTX_COMPILER_C51 defined")
 #elif defined CCTX_COMPILER_LLVM
-#		pragma message ("CCTX_COMPILER_LLVM defined")
+#	pragma message ("CCTX_COMPILER_LLVM defined")
 #elif defined CCTX_COMPILER_HIGHC
-#		pragma message ("CCTX_COMPILER_HIGHC defined")
+#	pragma message ("CCTX_COMPILER_HIGHC defined")
 #elif defined CCTX_COMPILER_MRI
-#		pragma message ("CCTX_COMPILER_MRI defined")
+#	pragma message ("CCTX_COMPILER_MRI defined")
 #elif defined CCTX_COMPILER_MINGW32
-#		pragma message ("CCTX_COMPILER_MINGW32 defined")
+#	pragma message ("CCTX_COMPILER_MINGW32 defined")
 #elif defined CCTX_COMPILER_MINGW64
-#		pragma message ("CCTX_COMPILER_MINGW64 defined")
+#	pragma message ("CCTX_COMPILER_MINGW64 defined")
 #elif defined CCTX_COMPILER_SPC
-#		pragma message ("CCTX_COMPILER_SPC defined")
+#	pragma message ("CCTX_COMPILER_SPC defined")
 #elif defined CCTX_COMPILER_SPCPP
-#		pragma message ("CCTX_COMPILER_SPCPP defined")
+#	pragma message ("CCTX_COMPILER_SPCPP defined")
 #elif defined CCTX_COMPILER_IBMC
-#		pragma message ("CCTX_COMPILER_IBMC defined")
+#	pragma message ("CCTX_COMPILER_IBMC defined")
 #elif defined CCTX_COMPILER_IBMCPP
-#		pragma message ("CCTX_COMPILER_IBMCPP defined")
+#	pragma message ("CCTX_COMPILER_IBMCPP defined")
 #elif defined CCTX_COMPILER_PGI
-#		pragma message ("CCTX_COMPILER_PGI defined")
+#	pragma message ("CCTX_COMPILER_PGI defined")
 #elif defined CCTX_COMPILER_HPC
-#		pragma message ("CCTX_COMPILER_HPC defined")
+#	pragma message ("CCTX_COMPILER_HPC defined")
 #elif defined CCTX_COMPILER_HPCPP
-#		pragma message ("CCTX_COMPILER_HPCPP defined")
+#	pragma message ("CCTX_COMPILER_HPCPP defined")
 #elif defined CCTX_COMPILER_CRAYC
-#		pragma message ("CCTX_COMPILER_CRAYC defined")
+#	pragma message ("CCTX_COMPILER_CRAYC defined")
 #elif defined CCTX_COMPILER_KCC
-#		pragma message ("CCTX_COMPILER_KCC defined")
+#	pragma message ("CCTX_COMPILER_KCC defined")
 #elif defined CCTX_COMPILER_NC
-#		pragma message ("CCTX_COMPILER_NC defined")
+#	pragma message ("CCTX_COMPILER_NC defined")
 #elif defined CCTX_COMPILER_TC
-#		pragma message ("CCTX_COMPILER_TC defined")
+#	pragma message ("CCTX_COMPILER_TC defined")
 #elif defined CCTX_COMPILER_USLC
-#		pragma message ("CCTX_COMPILER_USLC defined")
+#	pragma message ("CCTX_COMPILER_USLC defined")
 #elif defined CCTX_COMPILER_WC
-#		pragma message ("CCTX_COMPILER_WC defined")
+#	pragma message ("CCTX_COMPILER_WC defined")
 #elif defined CCTX_COMPILER_SASC
-#		pragma message ("CCTX_COMPILER_SASC defined")
+#	pragma message ("CCTX_COMPILER_SASC defined")
 #else
-#		pragma message ("CCTX : no compiler defined")
+#	pragma message ("CCTX : no compiler defined")
 #endif
 
 // Language
@@ -219,3 +219,26 @@
 #else
 #		pragma message ("CCTX : no language defined")
 #endif
+
+// Features
+#ifdef CCTX_FEATURES_CPP_EXCEPTIONS
+#   pragma message ("CCTX_FEATURES_CPP_EXCEPTIONS defined")
+#else
+#   pragma message ("CCTX_FEATURES_CPP_EXCEPTIONS not defined")
+#endif
+#ifdef CCTX_FEATURES_CPP_RTTI
+#   pragma message ("CCTX_FEATURES_CPP_RTTI defined")
+#else
+#   pragma message ("CCTX_FEATURES_CPP_RTTI not defined")
+#endif
+#ifdef CCTX_FEATURES_CPP_RVALUE_REF
+#   pragma message ("CCTX_FEATURES_CPP_RVALUE_REF defined")
+#else
+#   pragma message ("CCTX_FEATURES_CPP_RVALUE_REF not defined")
+#endif
+#ifdef CCTX_FEATURES_CPP_CONST_EXP
+#   pragma message ("CCTX_FEATURES_CPP_CONST_EXP defined")
+#else
+#   pragma message ("CCTX_FEATURES_CPP_CONST_EXP not defined")
+#endif
+

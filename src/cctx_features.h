@@ -16,7 +16,7 @@
 //	CCTX_FEATURES_CPP_COUNTER
 
 #if ((defined __cpp_exceptions) || (defined __EXCEPTIONS) || \
-	 ((defined __clang__) && (__has_feature(cxx_exceptions)) || \
+	 ((defined __clang__) && (__has_feature(cxx_exceptions))) || \
 	 ((defined  _MSC_VER) && (defined _CPPUNWIND)))
 #	define CCTX_FEATURES_CPP_EXCEPTIONS
 #endif
@@ -48,19 +48,19 @@
 #	define CCTX_FEATURES_CPP_STATIC_ASSERT
 #endif
 
-#if ((defined 0) || \
+#if ((0) || \
 	 ((defined __clang__) && (__has_feature(cxx_alignas))))
 #	define CCTX_FEATURES_CPP_ALIGN_AS
 #endif
 
-#if ((defined 0) || \
+#if ((0) || \
 	 ((defined __clang__) && (__has_feature(cxx_alignof))) || \
 	 ((defined _MSC_VER) && (__cplusplus > 201103L)))
 #	define CCTX_FEATURES_CPP_ALIGN_OF
 #elif ((defined _MSC_VER) && (_MSC_VER >= 1400))
 #	define CCTX_FEATURES_CPP_ALIGN_OF
 #	define alignof __alignof
-#elif ((defined __GNUC__) && _CCTX_GCC_VERSION_GE(4, 2))
+#elif ((defined __GNUC__) && _CCTX_GCC_VERSION_MIN(4, 2, 0))
 #	define CCTX_FEATURES_CPP_ALIGN_OF
 #	define alignof __alignof__
 #endif
