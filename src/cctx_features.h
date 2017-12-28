@@ -60,13 +60,13 @@
 #elif ((defined _MSC_VER) && (_MSC_VER >= 1400))
 #	define CCTX_FEATURES_CPP_ALIGN_OF
 #	define alignof __alignof
-#elif ((defined __GNUC__) && _CCTX_GCC_VERSION_MIN(4, 2, 0))
+#elif ((defined __GNUC__) && _CCTX_GCC_VERSION_MIN(4, 2, 1))
 #	define CCTX_FEATURES_CPP_ALIGN_OF
 #	define alignof __alignof__
 #endif
 
 #if (((defined __clang__) && (__cplusplus > 201103L)) || \
-	 ((defined __GNUC__) && _CCTX_GCC_VERSION_GE(4, 3)) || \
+	 ((defined __GNUC__) && _CCTX_GCC_VERSION_MIN(4, 3, 0)) || \
 	 ((defined _MSC_VER) && (_MSC_VER >= 1600)))
 #	define O_COMPILER_SUPPORTS_STATIC_ASSERT
 #endif

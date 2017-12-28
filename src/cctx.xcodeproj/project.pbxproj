@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		CEE73CBC1FF531ED00F1BFE2 /* cctx_checks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEE73CB71FF531ED00F1BFE2 /* cctx_checks.cpp */; };
 		CEE73CBD1FF531ED00F1BFE2 /* cctx_dump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEE73CBA1FF531ED00F1BFE2 /* cctx_dump.cpp */; };
+		CEE73CC01FF5395200F1BFE2 /* cctx_dump.c in Sources */ = {isa = PBXBuildFile; fileRef = CEE73CBF1FF5395200F1BFE2 /* cctx_dump.c */; };
+		CEE73CC31FF539B000F1BFE2 /* cctx_dump.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE73CC11FF539B000F1BFE2 /* cctx_dump.m */; };
+		CEE73CC41FF539B000F1BFE2 /* cctx_dump.mm in Sources */ = {isa = PBXBuildFile; fileRef = CEE73CC21FF539B000F1BFE2 /* cctx_dump.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +38,10 @@
 		CEE73CB91FF531ED00F1BFE2 /* cctx_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cctx_platform.h; sourceTree = SOURCE_ROOT; };
 		CEE73CBA1FF531ED00F1BFE2 /* cctx_dump.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cctx_dump.cpp; sourceTree = SOURCE_ROOT; };
 		CEE73CBB1FF531ED00F1BFE2 /* cctx_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cctx_endian.h; sourceTree = SOURCE_ROOT; };
+		CEE73CBE1FF5390E00F1BFE2 /* cctx_dump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cctx_dump.h; sourceTree = SOURCE_ROOT; };
+		CEE73CBF1FF5395200F1BFE2 /* cctx_dump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cctx_dump.c; sourceTree = SOURCE_ROOT; };
+		CEE73CC11FF539B000F1BFE2 /* cctx_dump.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cctx_dump.m; sourceTree = SOURCE_ROOT; };
+		CEE73CC21FF539B000F1BFE2 /* cctx_dump.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = cctx_dump.mm; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +74,10 @@
 		CE201C841FF530CA00351CEE /* cctx */ = {
 			isa = PBXGroup;
 			children = (
+				CEE73CC11FF539B000F1BFE2 /* cctx_dump.m */,
+				CEE73CC21FF539B000F1BFE2 /* cctx_dump.mm */,
+				CEE73CBF1FF5395200F1BFE2 /* cctx_dump.c */,
+				CEE73CBE1FF5390E00F1BFE2 /* cctx_dump.h */,
 				CEE73CB61FF531ED00F1BFE2 /* cctx_architecture.h */,
 				CEE73CB71FF531ED00F1BFE2 /* cctx_checks.cpp */,
 				CEE73CB31FF531ED00F1BFE2 /* cctx_compiler.h */,
@@ -138,7 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE73CC41FF539B000F1BFE2 /* cctx_dump.mm in Sources */,
 				CEE73CBC1FF531ED00F1BFE2 /* cctx_checks.cpp in Sources */,
+				CEE73CC31FF539B000F1BFE2 /* cctx_dump.m in Sources */,
+				CEE73CC01FF5395200F1BFE2 /* cctx_dump.c in Sources */,
 				CEE73CBD1FF531ED00F1BFE2 /* cctx_dump.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
