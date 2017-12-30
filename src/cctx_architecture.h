@@ -22,18 +22,18 @@
 //	CCTX_ARCH_SYSTEM370
 //	CCTX_ARCH_SYSTEMZ
 
-#if ((defined _M_I86) || ((defined _M_IX86) && (!defined __386__)))
-#	define CCTX_ARCH_X86
-#	define CCTX_ARCH_PTR_SIZE_2
-#elif ((defined _M_IX86) || (defined __X86__) || (defined _X86_) || (defined __I86__) || (defined __i386__) || (defined __i386) || (defined __386) || (defined __IA32__) || (defined __INTEL__) || (defined __THW_INTEL__))
-#	define CCTX_ARCH_X86
-#	define CCTX_ARCH_PTR_SIZE_4
+#if ((defined _M_IA64) || (defined _IA64) || (defined __ia64__) || (defined __ia64) || (defined __itanium__))
+#	define CCTX_ARCH_IA64
+#	define CCTX_ARCH_PTR_SIZE_8
 #elif ((defined _M_X64) || (defined _M_AMD64) || (defined __amd64) || (defined __amd64__) || (defined __x86_64) || (defined __x86_64__))
 #	define CCTX_ARCH_X86
 #	define CCTX_ARCH_PTR_SIZE_8
-#elif ((defined _M_IA64) || (defined _IA64) || (defined __ia64__) || (defined __ia64) || (defined __itanium__))
-#	define CCTX_ARCH_IA64
-#	define CCTX_ARCH_PTR_SIZE_8
+#elif ((defined _M_IX86) || (defined __X86__) || (defined _X86_) || (defined __I86__) || (defined __i386__) || (defined __i386) || (defined __386) || (defined __IA32__) || (defined __INTEL__) || (defined __THW_INTEL__))
+#	define CCTX_ARCH_X86
+#	define CCTX_ARCH_PTR_SIZE_4
+#elif ((defined _M_I86) || ((defined _M_IX86) && (!defined __386__)))
+#	define CCTX_ARCH_X86
+#	define CCTX_ARCH_PTR_SIZE_2
 #elif ((defined __m68k__) || (defined __MC68K__) || (defined M68000))
 #	define CCTX_ARCH_68K
 #	define CCTX_ARCH_PTR_SIZE_4

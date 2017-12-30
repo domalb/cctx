@@ -243,9 +243,9 @@
 #else
 #   pragma message ("CCTX_FEATURES_CPP_CONST_EXP not defined")
 #endif
-#ifdef CCTX_FEATURES_CPP_CONST_EXP
-#   pragma message ("CCTX_FEATURES_CPP_CONST_EXP defined")
+#ifdef CCTX_FEATURES_CPP_IF_CONST_EXP
+#   pragma message ("CCTX_FEATURES_CPP_IF_CONST_EXP defined")
 #else
-#   pragma message ("CCTX_FEATURES_CPP_CONST_EXP not defined")
+#   pragma message ("CCTX_FEATURES_CPP_IF_CONST_EXP not defined")
 #endif
 

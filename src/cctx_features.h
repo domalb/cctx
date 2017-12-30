@@ -68,6 +68,7 @@
 #	endif
 #endif
 
+// If const expressions
 #if (defined __cpp_if_constexpr)
 #	define CCTX_FEATURES_CPP_IF_CONST_EXP
 #endif
