@@ -153,6 +153,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cctx_checks.cpp" />
+    <ClCompile Include="cctx_dump.c" />
     <ClCompile Include="cctx_dump.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
