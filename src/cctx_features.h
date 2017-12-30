@@ -54,7 +54,7 @@
 	 ((defined _MSC_VER) && (_MSC_VER >= 1600)))
 #	define CCTX_FEATURES_CPP_RVALUE_REF
 #elif (defined __clang__)
-#	if (__has_extension(cxx_rvalue_references))) || \
+#	if (__has_extension(cxx_rvalue_references))
 #		define CCTX_FEATURES_CPP_RVALUE_REF
 #	endif
 #endif

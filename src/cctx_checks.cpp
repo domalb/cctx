@@ -1,5 +1,5 @@
 #include "cctx.h"
-
+/*
 #if defined __APPLE_CC__
 #	if TARGET_OS_IPHONE
 #		if TARGET_IPHONE_SIMULATOR
@@ -48,3 +48,4 @@
 #		error unsupported Apple platform
 #	endif // TARGET_OS
 #endif // __APPLE_CC__
+$*/

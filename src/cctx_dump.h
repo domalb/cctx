@@ -215,7 +215,9 @@
 #elif defined CCTX_LANGUAGE_CPPCX
 #		pragma message ("CCTX_LANGUAGE_CPPCX defined")
 #elif defined CCTX_LANGUAGE_OBJC
-#		pragma message ("CCTX_LANGUAGE_OBJC defined")
+#        pragma message ("CCTX_LANGUAGE_OBJC defined")
+#elif defined CCTX_LANGUAGE_OBJCPP
+#        pragma message ("CCTX_LANGUAGE_OBJCPP defined")
 #else
 #		pragma message ("CCTX : no language defined")
 #endif

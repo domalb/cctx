@@ -8,12 +8,17 @@
 //	CCTX_LANGUAGE_CPP C++
 //	CCTX_LANGUAGE_CPPCLI C++/CLI
 //	CCTX_LANGUAGE_CPPCX C++/CX
-//	CCTX_LANGUAGE_OBJC Objective-C
+//  CCTX_LANGUAGE_OBJC Objective-C
+//  CCTX_LANGUAGE_OBJCPP Objective-C++
 
 #if defined __ASSEMBLER__
 #	define CCTX_LANGUAGE_ASM
 #elif defined __OBJC__
-#	define CCTX_LANGUAGE_OBJC
+#   ifdef __cplusplus
+#       define CCTX_LANGUAGE_OBJCPP
+#   else
+#       define CCTX_LANGUAGE_OBJC
+#   endif
 #elif defined __cplusplus_cli
 #	define CCTX_LANGUAGE_CPPCLI
 #elif defined __cplusplus_winrt
