@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CEE73CBC1FF531ED00F1BFE2 /* cctx_checks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEE73CB71FF531ED00F1BFE2 /* cctx_checks.cpp */; };
-		CEE73CBD1FF531ED00F1BFE2 /* cctx_dump_cpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEE73CBA1FF531ED00F1BFE2 /* cctx_dump_cpp.cpp */; };
-		CEE73CC01FF5395200F1BFE2 /* cctx_dump_c.c in Sources */ = {isa = PBXBuildFile; fileRef = CEE73CBF1FF5395200F1BFE2 /* cctx_dump_c.c */; };
-		CEE73CC31FF539B000F1BFE2 /* cctx_dump_objc.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE73CC11FF539B000F1BFE2 /* cctx_dump_objc.m */; };
-		CEE73CC41FF539B000F1BFE2 /* cctx_dump_objcpp.mm in Sources */ = {isa = PBXBuildFile; fileRef = CEE73CC21FF539B000F1BFE2 /* cctx_dump_objcpp.mm */; };
+		CE3E3EB31FF8D3AE000ABB7A /* cctx_dump_cpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE3E3EA71FF8D3AD000ABB7A /* cctx_dump_cpp.cpp */; };
+		CE3E3EB41FF8D3AE000ABB7A /* cctx_checks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE3E3EA91FF8D3AD000ABB7A /* cctx_checks.cpp */; };
+		CE3E3EB51FF8D3AE000ABB7A /* cctx_dump_objc.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3E3EAC1FF8D3AD000ABB7A /* cctx_dump_objc.m */; };
+		CE3E3EB61FF8D3AE000ABB7A /* cctx_dump_c.c in Sources */ = {isa = PBXBuildFile; fileRef = CE3E3EAD1FF8D3AD000ABB7A /* cctx_dump_c.c */; };
+		CE3E3EB71FF8D3AE000ABB7A /* cctx_dump_objcpp.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE3E3EAF1FF8D3AE000ABB7A /* cctx_dump_objcpp.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,24 +28,37 @@
 
 /* Begin PBXFileReference section */
 		CE201C821FF530CA00351CEE /* cctx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cctx; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEE73CB21FF531ED00F1BFE2 /* cctx_language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cctx_language.h; sourceTree = SOURCE_ROOT; };
-		CEE73CB31FF531ED00F1BFE2 /* cctx_compiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cctx_compiler.h; sourceTree = SOURCE_ROOT; };
-		CEE73CB41FF531ED00F1BFE2 /* cctx_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cctx_utils.h; sourceTree = SOURCE_ROOT; };
-		CEE73CB51FF531ED00F1BFE2 /* cctx_features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cctx_features.h; sourceTree = SOURCE_ROOT; };
-		CEE73CB61FF531ED00F1BFE2 /* cctx_architecture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cctx_architecture.h; sourceTree = SOURCE_ROOT; };
-		CEE73CB71FF531ED00F1BFE2 /* cctx_checks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cctx_checks.cpp; sourceTree = SOURCE_ROOT; };
-		CEE73CB81FF531ED00F1BFE2 /* cctx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cctx.h; sourceTree = SOURCE_ROOT; };
-		CEE73CB91FF531ED00F1BFE2 /* cctx_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cctx_platform.h; sourceTree = SOURCE_ROOT; };
-		CEE73CBA1FF531ED00F1BFE2 /* cctx_dump_cpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cctx_dump_cpp.cpp; sourceTree = SOURCE_ROOT; };
-		CEE73CBB1FF531ED00F1BFE2 /* cctx_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cctx_endian.h; sourceTree = SOURCE_ROOT; };
-		CEE73CBE1FF5390E00F1BFE2 /* cctx_dump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cctx_dump.h; sourceTree = SOURCE_ROOT; };
-		CEE73CBF1FF5395200F1BFE2 /* cctx_dump_c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cctx_dump_c.c; sourceTree = SOURCE_ROOT; };
-		CEE73CC11FF539B000F1BFE2 /* cctx_dump_objc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cctx_dump_objc.m; sourceTree = SOURCE_ROOT; };
-		CEE73CC21FF539B000F1BFE2 /* cctx_dump_objcpp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = cctx_dump_objcpp.mm; sourceTree = SOURCE_ROOT; };
+		CE3E3EA51FF8D3AD000ABB7A /* cctx_language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cctx_language.h; path = ../../../src/cctx_language.h; sourceTree = "<group>"; };
+		CE3E3EA61FF8D3AD000ABB7A /* cctx_compiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cctx_compiler.h; path = ../../../src/cctx_compiler.h; sourceTree = "<group>"; };
+		CE3E3EA71FF8D3AD000ABB7A /* cctx_dump_cpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cctx_dump_cpp.cpp; path = ../../../src/cctx_dump_cpp.cpp; sourceTree = "<group>"; };
+		CE3E3EA81FF8D3AD000ABB7A /* cctx_architecture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cctx_architecture.h; path = ../../../src/cctx_architecture.h; sourceTree = "<group>"; };
+		CE3E3EA91FF8D3AD000ABB7A /* cctx_checks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cctx_checks.cpp; path = ../../../src/cctx_checks.cpp; sourceTree = "<group>"; };
+		CE3E3EAA1FF8D3AD000ABB7A /* cctx_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cctx_utils.h; path = ../../../src/cctx_utils.h; sourceTree = "<group>"; };
+		CE3E3EAB1FF8D3AD000ABB7A /* cctx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cctx.h; path = ../../../src/cctx.h; sourceTree = "<group>"; };
+		CE3E3EAC1FF8D3AD000ABB7A /* cctx_dump_objc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = cctx_dump_objc.m; path = ../../../src/cctx_dump_objc.m; sourceTree = "<group>"; };
+		CE3E3EAD1FF8D3AD000ABB7A /* cctx_dump_c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cctx_dump_c.c; path = ../../../src/cctx_dump_c.c; sourceTree = "<group>"; };
+		CE3E3EAE1FF8D3AE000ABB7A /* cctx_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cctx_endian.h; path = ../../../src/cctx_endian.h; sourceTree = "<group>"; };
+		CE3E3EAF1FF8D3AE000ABB7A /* cctx_dump_objcpp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = cctx_dump_objcpp.mm; path = ../../../src/cctx_dump_objcpp.mm; sourceTree = "<group>"; };
+		CE3E3EB01FF8D3AE000ABB7A /* cctx_features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cctx_features.h; path = ../../../src/cctx_features.h; sourceTree = "<group>"; };
+		CE3E3EB11FF8D3AE000ABB7A /* cctx_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cctx_platform.h; path = ../../../src/cctx_platform.h; sourceTree = "<group>"; };
+		CE3E3EB21FF8D3AE000ABB7A /* cctx_dump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cctx_dump.h; path = ../../../src/cctx_dump.h; sourceTree = "<group>"; };
+		CE3E3EB91FF8D3C5000ABB7A /* cctx_dump_objcpp.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = cctx_dump_objcpp.mm; path = ../../../../../src/cctx_dump_objcpp.mm; sourceTree = "<group>"; };
+		CE3E3EBA1FF8D3C5000ABB7A /* cctx_dump_cpp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = cctx_dump_cpp.cpp; path = ../../../../../src/cctx_dump_cpp.cpp; sourceTree = "<group>"; };
+		CE3E3EBB1FF8D3C5000ABB7A /* cctx_dump.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cctx_dump.h; path = ../../../../../src/cctx_dump.h; sourceTree = "<group>"; };
+		CE3E3EBC1FF8D3C5000ABB7A /* cctx_dump_c.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = cctx_dump_c.c; path = ../../../../../src/cctx_dump_c.c; sourceTree = "<group>"; };
+		CE3E3EBD1FF8D3C6000ABB7A /* cctx_dump_objc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = cctx_dump_objc.m; path = ../../../../../src/cctx_dump_objc.m; sourceTree = "<group>"; };
+		CE3E3EC21FF8D517000ABB7A /* libcctx_mac.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libcctx_mac.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CE201C7F1FF530CA00351CEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3E3EBF1FF8D517000ABB7A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -67,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				CE201C821FF530CA00351CEE /* cctx */,
+				CE3E3EC21FF8D517000ABB7A /* libcctx_mac.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,33 +88,48 @@
 		CE201C841FF530CA00351CEE /* cctx */ = {
 			isa = PBXGroup;
 			children = (
-				CE3E3EA41FF7EEBF000ABB7A /* Dump */,
-				CEE73CB61FF531ED00F1BFE2 /* cctx_architecture.h */,
-				CEE73CB71FF531ED00F1BFE2 /* cctx_checks.cpp */,
-				CEE73CB31FF531ED00F1BFE2 /* cctx_compiler.h */,
-				CEE73CBB1FF531ED00F1BFE2 /* cctx_endian.h */,
-				CEE73CB51FF531ED00F1BFE2 /* cctx_features.h */,
-				CEE73CB21FF531ED00F1BFE2 /* cctx_language.h */,
-				CEE73CB91FF531ED00F1BFE2 /* cctx_platform.h */,
-				CEE73CB41FF531ED00F1BFE2 /* cctx_utils.h */,
-				CEE73CB81FF531ED00F1BFE2 /* cctx.h */,
+				CE3E3EB81FF8D3BA000ABB7A /* dump */,
+				CE3E3EA81FF8D3AD000ABB7A /* cctx_architecture.h */,
+				CE3E3EA91FF8D3AD000ABB7A /* cctx_checks.cpp */,
+				CE3E3EA61FF8D3AD000ABB7A /* cctx_compiler.h */,
+				CE3E3EAD1FF8D3AD000ABB7A /* cctx_dump_c.c */,
+				CE3E3EA71FF8D3AD000ABB7A /* cctx_dump_cpp.cpp */,
+				CE3E3EAC1FF8D3AD000ABB7A /* cctx_dump_objc.m */,
+				CE3E3EAF1FF8D3AE000ABB7A /* cctx_dump_objcpp.mm */,
+				CE3E3EB21FF8D3AE000ABB7A /* cctx_dump.h */,
+				CE3E3EAE1FF8D3AE000ABB7A /* cctx_endian.h */,
+				CE3E3EB01FF8D3AE000ABB7A /* cctx_features.h */,
+				CE3E3EA51FF8D3AD000ABB7A /* cctx_language.h */,
+				CE3E3EB11FF8D3AE000ABB7A /* cctx_platform.h */,
+				CE3E3EAA1FF8D3AD000ABB7A /* cctx_utils.h */,
+				CE3E3EAB1FF8D3AD000ABB7A /* cctx.h */,
 			);
 			path = cctx;
 			sourceTree = "<group>";
 		};
-		CE3E3EA41FF7EEBF000ABB7A /* Dump */ = {
+		CE3E3EB81FF8D3BA000ABB7A /* dump */ = {
 			isa = PBXGroup;
 			children = (
-				CEE73CBE1FF5390E00F1BFE2 /* cctx_dump.h */,
-				CEE73CBF1FF5395200F1BFE2 /* cctx_dump_c.c */,
-				CEE73CBA1FF531ED00F1BFE2 /* cctx_dump_cpp.cpp */,
-				CEE73CC11FF539B000F1BFE2 /* cctx_dump_objc.m */,
-				CEE73CC21FF539B000F1BFE2 /* cctx_dump_objcpp.mm */,
+				CE3E3EBC1FF8D3C5000ABB7A /* cctx_dump_c.c */,
+				CE3E3EBA1FF8D3C5000ABB7A /* cctx_dump_cpp.cpp */,
+				CE3E3EBD1FF8D3C6000ABB7A /* cctx_dump_objc.m */,
+				CE3E3EB91FF8D3C5000ABB7A /* cctx_dump_objcpp.mm */,
+				CE3E3EBB1FF8D3C5000ABB7A /* cctx_dump.h */,
 			);
-			name = Dump;
+			path = dump;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CE3E3EC01FF8D517000ABB7A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		CE201C811FF530CA00351CEE /* cctx */ = {
@@ -120,6 +149,23 @@
 			productReference = CE201C821FF530CA00351CEE /* cctx */;
 			productType = "com.apple.product-type.tool";
 		};
+		CE3E3EC11FF8D517000ABB7A /* cctx_mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE3E3EC81FF8D517000ABB7A /* Build configuration list for PBXNativeTarget "cctx_mac" */;
+			buildPhases = (
+				CE3E3EBE1FF8D517000ABB7A /* Sources */,
+				CE3E3EBF1FF8D517000ABB7A /* Frameworks */,
+				CE3E3EC01FF8D517000ABB7A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cctx_mac;
+			productName = cctx_mac;
+			productReference = CE3E3EC21FF8D517000ABB7A /* libcctx_mac.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -130,6 +176,10 @@
 				ORGANIZATIONNAME = "OSome Studio";
 				TargetAttributes = {
 					CE201C811FF530CA00351CEE = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					CE3E3EC11FF8D517000ABB7A = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -148,6 +198,7 @@
 			projectRoot = "";
 			targets = (
 				CE201C811FF530CA00351CEE /* cctx */,
+				CE3E3EC11FF8D517000ABB7A /* cctx_mac */,
 			);
 		};
 /* End PBXProject section */
@@ -157,11 +208,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEE73CC41FF539B000F1BFE2 /* cctx_dump_objcpp.mm in Sources */,
-				CEE73CBC1FF531ED00F1BFE2 /* cctx_checks.cpp in Sources */,
-				CEE73CC31FF539B000F1BFE2 /* cctx_dump_objc.m in Sources */,
-				CEE73CC01FF5395200F1BFE2 /* cctx_dump_c.c in Sources */,
-				CEE73CBD1FF531ED00F1BFE2 /* cctx_dump_cpp.cpp in Sources */,
+				CE3E3EB51FF8D3AE000ABB7A /* cctx_dump_objc.m in Sources */,
+				CE3E3EB41FF8D3AE000ABB7A /* cctx_checks.cpp in Sources */,
+				CE3E3EB31FF8D3AE000ABB7A /* cctx_dump_cpp.cpp in Sources */,
+				CE3E3EB61FF8D3AE000ABB7A /* cctx_dump_c.c in Sources */,
+				CE3E3EB71FF8D3AE000ABB7A /* cctx_dump_objcpp.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3E3EBE1FF8D517000ABB7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +345,28 @@
 			};
 			name = Release;
 		};
+		CE3E3EC91FF8D517000ABB7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CE3E3ECA1FF8D517000ABB7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -304,6 +384,15 @@
 			buildConfigurations = (
 				CE201C8A1FF530CA00351CEE /* Debug */,
 				CE201C8B1FF530CA00351CEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE3E3EC81FF8D517000ABB7A /* Build configuration list for PBXNativeTarget "cctx_mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE3E3EC91FF8D517000ABB7A /* Debug */,
+				CE3E3ECA1FF8D517000ABB7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
