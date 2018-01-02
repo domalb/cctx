@@ -7,28 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE38541A1FFA79B9002B6BF5 /* cctx_dump_c.c in Sources */ = {isa = PBXBuildFile; fileRef = CE3854151FFA79B9002B6BF5 /* cctx_dump_c.c */; };
-		CE38541C1FFA79B9002B6BF5 /* cctx_dump.h in Headers */ = {isa = PBXBuildFile; fileRef = CE3854171FFA79B9002B6BF5 /* cctx_dump.h */; };
-		CE38541D1FFA79C8002B6BF5 /* cctx_dump_cpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE3854161FFA79B9002B6BF5 /* cctx_dump_cpp.cpp */; };
-		CE38541E1FFA79CC002B6BF5 /* cctx_dump_objc.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3854141FFA79B9002B6BF5 /* cctx_dump_objc.m */; };
-		CE38541F1FFA79D1002B6BF5 /* cctx_dump_objcpp.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE3854131FFA79B9002B6BF5 /* cctx_dump_objcpp.mm */; };
+		CE2EE76F1FFAB42E004FA9EC /* cctx_dump_c.c in Sources */ = {isa = PBXBuildFile; fileRef = CE2EE7691FFAB414004FA9EC /* cctx_dump_c.c */; };
+		CE2EE7701FFAB433004FA9EC /* cctx_dump_cpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE2EE7631FFAB413004FA9EC /* cctx_dump_cpp.cpp */; };
+		CE2EE7711FFAB438004FA9EC /* cctx_dump_objc.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2EE7681FFAB414004FA9EC /* cctx_dump_objc.m */; };
+		CE2EE7721FFAB43C004FA9EC /* cctx_dump_objcpp.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE2EE76B1FFAB414004FA9EC /* cctx_dump_objcpp.mm */; };
+		CE2EE77B1FFAB4E2004FA9EC /* cctx_dump_c.c in Sources */ = {isa = PBXBuildFile; fileRef = CE2EE7691FFAB414004FA9EC /* cctx_dump_c.c */; };
+		CE2EE77E1FFAB4E9004FA9EC /* cctx_dump_c.c in Sources */ = {isa = PBXBuildFile; fileRef = CE2EE7691FFAB414004FA9EC /* cctx_dump_c.c */; };
+		CE2EE7851FFAB4FA004FA9EC /* cctx_dump_cpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE2EE7631FFAB413004FA9EC /* cctx_dump_cpp.cpp */; };
+		CE2EE7881FFAB502004FA9EC /* cctx_dump_c.c in Sources */ = {isa = PBXBuildFile; fileRef = CE2EE7691FFAB414004FA9EC /* cctx_dump_c.c */; };
+		CE2EE7891FFAB502004FA9EC /* cctx_dump_cpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE2EE7631FFAB413004FA9EC /* cctx_dump_cpp.cpp */; };
+		CE2EE7921FFAB511004FA9EC /* cctx_dump_c.c in Sources */ = {isa = PBXBuildFile; fileRef = CE2EE7691FFAB414004FA9EC /* cctx_dump_c.c */; };
+		CE2EE7931FFAB511004FA9EC /* cctx_dump_cpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE2EE7631FFAB413004FA9EC /* cctx_dump_cpp.cpp */; };
+		CE2EE79A1FFAB51E004FA9EC /* cctx_dump_objcpp.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE2EE76B1FFAB414004FA9EC /* cctx_dump_objcpp.mm */; };
+		CE2EE79B1FFAB523004FA9EC /* cctx_dump_objc.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2EE7681FFAB414004FA9EC /* cctx_dump_objc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE3854131FFA79B9002B6BF5 /* cctx_dump_objcpp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = cctx_dump_objcpp.mm; path = ../../../src/cctx_dump_objcpp.mm; sourceTree = "<group>"; };
-		CE3854141FFA79B9002B6BF5 /* cctx_dump_objc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = cctx_dump_objc.m; path = ../../../src/cctx_dump_objc.m; sourceTree = "<group>"; };
-		CE3854151FFA79B9002B6BF5 /* cctx_dump_c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cctx_dump_c.c; path = ../../../src/cctx_dump_c.c; sourceTree = "<group>"; };
-		CE3854161FFA79B9002B6BF5 /* cctx_dump_cpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cctx_dump_cpp.cpp; path = ../../../src/cctx_dump_cpp.cpp; sourceTree = "<group>"; };
-		CE3854171FFA79B9002B6BF5 /* cctx_dump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cctx_dump.h; path = ../../../src/cctx_dump.h; sourceTree = "<group>"; };
-		CE3E3EA51FF8D3AD000ABB7A /* cctx_language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cctx_language.h; path = ../../../src/cctx_language.h; sourceTree = "<group>"; };
-		CE3E3EA61FF8D3AD000ABB7A /* cctx_compiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cctx_compiler.h; path = ../../../src/cctx_compiler.h; sourceTree = "<group>"; };
-		CE3E3EA81FF8D3AD000ABB7A /* cctx_architecture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cctx_architecture.h; path = ../../../src/cctx_architecture.h; sourceTree = "<group>"; };
-		CE3E3EA91FF8D3AD000ABB7A /* cctx_checks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cctx_checks.cpp; path = ../../../src/cctx_checks.cpp; sourceTree = "<group>"; };
-		CE3E3EAA1FF8D3AD000ABB7A /* cctx_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cctx_utils.h; path = ../../../src/cctx_utils.h; sourceTree = "<group>"; };
-		CE3E3EAB1FF8D3AD000ABB7A /* cctx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cctx.h; path = ../../../src/cctx.h; sourceTree = "<group>"; };
-		CE3E3EAE1FF8D3AE000ABB7A /* cctx_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cctx_endian.h; path = ../../../src/cctx_endian.h; sourceTree = "<group>"; };
-		CE3E3EB01FF8D3AE000ABB7A /* cctx_features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cctx_features.h; path = ../../../src/cctx_features.h; sourceTree = "<group>"; };
-		CE3E3EB11FF8D3AE000ABB7A /* cctx_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cctx_platform.h; path = ../../../src/cctx_platform.h; sourceTree = "<group>"; };
+		CE2EE7611FFAB413004FA9EC /* cctx_language.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cctx_language.h; path = ../../src/cctx_language.h; sourceTree = "<group>"; };
+		CE2EE7621FFAB413004FA9EC /* cctx_compiler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cctx_compiler.h; path = ../../src/cctx_compiler.h; sourceTree = "<group>"; };
+		CE2EE7631FFAB413004FA9EC /* cctx_dump_cpp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = cctx_dump_cpp.cpp; path = ../../src/cctx_dump_cpp.cpp; sourceTree = "<group>"; };
+		CE2EE7641FFAB413004FA9EC /* cctx_architecture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cctx_architecture.h; path = ../../src/cctx_architecture.h; sourceTree = "<group>"; };
+		CE2EE7651FFAB414004FA9EC /* cctx_checks.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = cctx_checks.cpp; path = ../../src/cctx_checks.cpp; sourceTree = "<group>"; };
+		CE2EE7661FFAB414004FA9EC /* cctx_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cctx_utils.h; path = ../../src/cctx_utils.h; sourceTree = "<group>"; };
+		CE2EE7671FFAB414004FA9EC /* cctx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cctx.h; path = ../../src/cctx.h; sourceTree = "<group>"; };
+		CE2EE7681FFAB414004FA9EC /* cctx_dump_objc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = cctx_dump_objc.m; path = ../../src/cctx_dump_objc.m; sourceTree = "<group>"; };
+		CE2EE7691FFAB414004FA9EC /* cctx_dump_c.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = cctx_dump_c.c; path = ../../src/cctx_dump_c.c; sourceTree = "<group>"; };
+		CE2EE76A1FFAB414004FA9EC /* cctx_endian.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cctx_endian.h; path = ../../src/cctx_endian.h; sourceTree = "<group>"; };
+		CE2EE76B1FFAB414004FA9EC /* cctx_dump_objcpp.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = cctx_dump_objcpp.mm; path = ../../src/cctx_dump_objcpp.mm; sourceTree = "<group>"; };
+		CE2EE76C1FFAB415004FA9EC /* cctx_features.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cctx_features.h; path = ../../src/cctx_features.h; sourceTree = "<group>"; };
+		CE2EE76D1FFAB415004FA9EC /* cctx_platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cctx_platform.h; path = ../../src/cctx_platform.h; sourceTree = "<group>"; };
+		CE2EE76E1FFAB415004FA9EC /* cctx_dump.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cctx_dump.h; path = ../../src/cctx_dump.h; sourceTree = "<group>"; };
+		CE2EE7771FFAB4B9004FA9EC /* libcctx_ios_c.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcctx_ios_c.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2EE7841FFAB4E9004FA9EC /* libcctx_ios_cpp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcctx_ios_cpp.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2EE78F1FFAB502004FA9EC /* libcctx_ios_objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcctx_ios_objc.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2EE7991FFAB511004FA9EC /* libcctx_ios_objcpp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcctx_ios_objcpp.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB295571FF94F4A00940CFA /* libcctx_mac_c.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libcctx_mac_c.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB295691FFA76E600940CFA /* libcctx_mac_cpp.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libcctx_mac_cpp.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB295721FFA76F500940CFA /* libcctx_mac_objc.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libcctx_mac_objc.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +48,34 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CE2EE7741FFAB4B9004FA9EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2EE77F1FFAB4E9004FA9EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2EE78A1FFAB502004FA9EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2EE7941FFAB511004FA9EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEB295541FF94F4A00940CFA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,7 +110,20 @@
 		CE201C791FF530CA00351CEE = {
 			isa = PBXGroup;
 			children = (
-				CE201C841FF530CA00351CEE /* cctx */,
+				CE2EE7641FFAB413004FA9EC /* cctx_architecture.h */,
+				CE2EE7651FFAB414004FA9EC /* cctx_checks.cpp */,
+				CE2EE7621FFAB413004FA9EC /* cctx_compiler.h */,
+				CE2EE7691FFAB414004FA9EC /* cctx_dump_c.c */,
+				CE2EE7631FFAB413004FA9EC /* cctx_dump_cpp.cpp */,
+				CE2EE7681FFAB414004FA9EC /* cctx_dump_objc.m */,
+				CE2EE76B1FFAB414004FA9EC /* cctx_dump_objcpp.mm */,
+				CE2EE76E1FFAB415004FA9EC /* cctx_dump.h */,
+				CE2EE76A1FFAB414004FA9EC /* cctx_endian.h */,
+				CE2EE76C1FFAB415004FA9EC /* cctx_features.h */,
+				CE2EE7611FFAB413004FA9EC /* cctx_language.h */,
+				CE2EE76D1FFAB415004FA9EC /* cctx_platform.h */,
+				CE2EE7661FFAB414004FA9EC /* cctx_utils.h */,
+				CE2EE7671FFAB414004FA9EC /* cctx.h */,
 				CE201C831FF530CA00351CEE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,39 +135,49 @@
 				CEB295691FFA76E600940CFA /* libcctx_mac_cpp.dylib */,
 				CEB295721FFA76F500940CFA /* libcctx_mac_objc.dylib */,
 				CEB2957B1FFA770200940CFA /* libcctx_mac_objcpp.dylib */,
+				CE2EE7771FFAB4B9004FA9EC /* libcctx_ios_c.a */,
+				CE2EE7841FFAB4E9004FA9EC /* libcctx_ios_cpp.a */,
+				CE2EE78F1FFAB502004FA9EC /* libcctx_ios_objc.a */,
+				CE2EE7991FFAB511004FA9EC /* libcctx_ios_objcpp.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		CE201C841FF530CA00351CEE /* cctx */ = {
-			isa = PBXGroup;
-			children = (
-				CE3854151FFA79B9002B6BF5 /* cctx_dump_c.c */,
-				CE3854161FFA79B9002B6BF5 /* cctx_dump_cpp.cpp */,
-				CE3854141FFA79B9002B6BF5 /* cctx_dump_objc.m */,
-				CE3854131FFA79B9002B6BF5 /* cctx_dump_objcpp.mm */,
-				CE3854171FFA79B9002B6BF5 /* cctx_dump.h */,
-				CE3E3EA81FF8D3AD000ABB7A /* cctx_architecture.h */,
-				CE3E3EA91FF8D3AD000ABB7A /* cctx_checks.cpp */,
-				CE3E3EA61FF8D3AD000ABB7A /* cctx_compiler.h */,
-				CE3E3EAE1FF8D3AE000ABB7A /* cctx_endian.h */,
-				CE3E3EB01FF8D3AE000ABB7A /* cctx_features.h */,
-				CE3E3EA51FF8D3AD000ABB7A /* cctx_language.h */,
-				CE3E3EB11FF8D3AE000ABB7A /* cctx_platform.h */,
-				CE3E3EAA1FF8D3AD000ABB7A /* cctx_utils.h */,
-				CE3E3EAB1FF8D3AD000ABB7A /* cctx.h */,
-			);
-			path = cctx;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		CE2EE7751FFAB4B9004FA9EC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2EE7801FFAB4E9004FA9EC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2EE78B1FFAB502004FA9EC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2EE7951FFAB511004FA9EC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEB295551FF94F4A00940CFA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE38541C1FFA79B9002B6BF5 /* cctx_dump.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +205,74 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		CE2EE7761FFAB4B9004FA9EC /* cctx_ios_c */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE2EE7781FFAB4B9004FA9EC /* Build configuration list for PBXNativeTarget "cctx_ios_c" */;
+			buildPhases = (
+				CE2EE7731FFAB4B9004FA9EC /* Sources */,
+				CE2EE7741FFAB4B9004FA9EC /* Frameworks */,
+				CE2EE7751FFAB4B9004FA9EC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cctx_ios_c;
+			productName = cctx_ios_c;
+			productReference = CE2EE7771FFAB4B9004FA9EC /* libcctx_ios_c.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CE2EE77C1FFAB4E9004FA9EC /* cctx_ios_cpp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE2EE7811FFAB4E9004FA9EC /* Build configuration list for PBXNativeTarget "cctx_ios_cpp" */;
+			buildPhases = (
+				CE2EE77D1FFAB4E9004FA9EC /* Sources */,
+				CE2EE77F1FFAB4E9004FA9EC /* Frameworks */,
+				CE2EE7801FFAB4E9004FA9EC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cctx_ios_cpp;
+			productName = cctx_ios_c;
+			productReference = CE2EE7841FFAB4E9004FA9EC /* libcctx_ios_cpp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CE2EE7861FFAB502004FA9EC /* cctx_ios_objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE2EE78C1FFAB502004FA9EC /* Build configuration list for PBXNativeTarget "cctx_ios_objc" */;
+			buildPhases = (
+				CE2EE7871FFAB502004FA9EC /* Sources */,
+				CE2EE78A1FFAB502004FA9EC /* Frameworks */,
+				CE2EE78B1FFAB502004FA9EC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cctx_ios_objc;
+			productName = cctx_ios_c;
+			productReference = CE2EE78F1FFAB502004FA9EC /* libcctx_ios_objc.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CE2EE7901FFAB511004FA9EC /* cctx_ios_objcpp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE2EE7961FFAB511004FA9EC /* Build configuration list for PBXNativeTarget "cctx_ios_objcpp" */;
+			buildPhases = (
+				CE2EE7911FFAB511004FA9EC /* Sources */,
+				CE2EE7941FFAB511004FA9EC /* Frameworks */,
+				CE2EE7951FFAB511004FA9EC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cctx_ios_objcpp;
+			productName = cctx_ios_c;
+			productReference = CE2EE7991FFAB511004FA9EC /* libcctx_ios_objcpp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		CEB295561FF94F4A00940CFA /* cctx_mac_c */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEB2955F1FF94F4A00940CFA /* Build configuration list for PBXNativeTarget "cctx_mac_c" */;
@@ -219,6 +350,19 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "OSome Studio";
 				TargetAttributes = {
+					CE2EE7761FFAB4B9004FA9EC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					CE2EE77C1FFAB4E9004FA9EC = {
+						ProvisioningStyle = Automatic;
+					};
+					CE2EE7861FFAB502004FA9EC = {
+						ProvisioningStyle = Automatic;
+					};
+					CE2EE7901FFAB511004FA9EC = {
+						ProvisioningStyle = Automatic;
+					};
 					CEB295561FF94F4A00940CFA = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
@@ -250,16 +394,57 @@
 				CEB295611FFA76E600940CFA /* cctx_mac_cpp */,
 				CEB2956A1FFA76F500940CFA /* cctx_mac_objc */,
 				CEB295731FFA770200940CFA /* cctx_mac_objcpp */,
+				CE2EE7761FFAB4B9004FA9EC /* cctx_ios_c */,
+				CE2EE77C1FFAB4E9004FA9EC /* cctx_ios_cpp */,
+				CE2EE7861FFAB502004FA9EC /* cctx_ios_objc */,
+				CE2EE7901FFAB511004FA9EC /* cctx_ios_objcpp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CE2EE7731FFAB4B9004FA9EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE2EE77B1FFAB4E2004FA9EC /* cctx_dump_c.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2EE77D1FFAB4E9004FA9EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE2EE77E1FFAB4E9004FA9EC /* cctx_dump_c.c in Sources */,
+				CE2EE7851FFAB4FA004FA9EC /* cctx_dump_cpp.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2EE7871FFAB502004FA9EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE2EE79B1FFAB523004FA9EC /* cctx_dump_objc.m in Sources */,
+				CE2EE7881FFAB502004FA9EC /* cctx_dump_c.c in Sources */,
+				CE2EE7891FFAB502004FA9EC /* cctx_dump_cpp.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2EE7911FFAB511004FA9EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE2EE7921FFAB511004FA9EC /* cctx_dump_c.c in Sources */,
+				CE2EE79A1FFAB51E004FA9EC /* cctx_dump_objcpp.mm in Sources */,
+				CE2EE7931FFAB511004FA9EC /* cctx_dump_cpp.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEB295531FF94F4A00940CFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE38541A1FFA79B9002B6BF5 /* cctx_dump_c.c in Sources */,
+				CE2EE76F1FFAB42E004FA9EC /* cctx_dump_c.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +452,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE38541D1FFA79C8002B6BF5 /* cctx_dump_cpp.cpp in Sources */,
+				CE2EE7701FFAB433004FA9EC /* cctx_dump_cpp.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +460,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE38541E1FFA79CC002B6BF5 /* cctx_dump_objc.m in Sources */,
+				CE2EE7711FFAB438004FA9EC /* cctx_dump_objc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE38541F1FFA79D1002B6BF5 /* cctx_dump_objcpp.mm in Sources */,
+				CE2EE7721FFAB43C004FA9EC /* cctx_dump_objcpp.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +578,86 @@
 			};
 			name = Release;
 		};
+		CE2EE7791FFAB4B9004FA9EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Debug;
+		};
+		CE2EE77A1FFAB4B9004FA9EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Release;
+		};
+		CE2EE7821FFAB4E9004FA9EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Debug;
+		};
+		CE2EE7831FFAB4E9004FA9EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Release;
+		};
+		CE2EE78D1FFAB502004FA9EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Debug;
+		};
+		CE2EE78E1FFAB502004FA9EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Release;
+		};
+		CE2EE7971FFAB511004FA9EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Debug;
+		};
+		CE2EE7981FFAB511004FA9EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Release;
+		};
 		CEB2955D1FF94F4A00940CFA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -489,6 +754,42 @@
 			buildConfigurations = (
 				CE201C871FF530CA00351CEE /* Debug */,
 				CE201C881FF530CA00351CEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE2EE7781FFAB4B9004FA9EC /* Build configuration list for PBXNativeTarget "cctx_ios_c" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE2EE7791FFAB4B9004FA9EC /* Debug */,
+				CE2EE77A1FFAB4B9004FA9EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE2EE7811FFAB4E9004FA9EC /* Build configuration list for PBXNativeTarget "cctx_ios_cpp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE2EE7821FFAB4E9004FA9EC /* Debug */,
+				CE2EE7831FFAB4E9004FA9EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE2EE78C1FFAB502004FA9EC /* Build configuration list for PBXNativeTarget "cctx_ios_objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE2EE78D1FFAB502004FA9EC /* Debug */,
+				CE2EE78E1FFAB502004FA9EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE2EE7961FFAB511004FA9EC /* Build configuration list for PBXNativeTarget "cctx_ios_objcpp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE2EE7971FFAB511004FA9EC /* Debug */,
+				CE2EE7981FFAB511004FA9EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
