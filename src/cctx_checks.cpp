@@ -1,4 +1,12 @@
 #include "cctx.h"
+
+// Pointer size
+#if !((defined CCTX_ARCH_PTR_SIZE_2) || (defined CCTX_ARCH_PTR_SIZE_4) || (defined CCTX_ARCH_PTR_SIZE_8))
+#	error Pointer size not defined
+#endif
+
+// Architectures
+
 /*
 #if defined __APPLE_CC__
 #	if TARGET_OS_IPHONE
