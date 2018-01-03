@@ -15,11 +15,7 @@
 //	CCTX_FEATURES_CPP_ALIGN_OF
 //	CCTX_FEATURES_CPP_COUNTER
 
-#if (define __clang__)
-#	include "cctx_features_clang.h"
-#elif (defined __GCC__)
-#	include "cctx_features_gcc.h"
-#elif (defined _MSC_VER)
+#if defined _MSC_VER
 #	include "cctx_features_msc.h"
 #else
 

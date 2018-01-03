@@ -25,6 +25,9 @@
     <ClInclude Include="..\..\src\cctx_dump.h" />
     <ClInclude Include="..\..\src\cctx_endian.h" />
     <ClInclude Include="..\..\src\cctx_features.h" />
+    <ClInclude Include="..\..\src\cctx_features_clang.h" />
+    <ClInclude Include="..\..\src\cctx_features_gcc.h" />
+    <ClInclude Include="..\..\src\cctx_features_msc.h" />
     <ClInclude Include="..\..\src\cctx_language.h" />
     <ClInclude Include="..\..\src\cctx_platform.h" />
     <ClInclude Include="..\..\src\cctx_utils.h" />

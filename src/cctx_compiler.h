@@ -48,6 +48,7 @@
 //	CCTX_COMPILER_CG CodeGear
 //	CCTX_COMPILER_GHS Greenhills C++
 //	CCTX_COMPILER_SGI SGI MIPSpro C++
+//	CCTX_COMPILER_MSC Microsoft Visual Studio Compiler
 
 #if (defined __clang__) // Clang defines __GNUC__
 #	define CCTX_COMPILER_CLANG
@@ -133,7 +134,7 @@
 #elif ((defined __SASC__) || (defined __SASC))
 #	define CCTX_COMPILER_SASC
 #elif (defined _MSC_VER)
-#	define CCTX_COMPILER_MSVC
+#	define CCTX_COMPILER_MSC
 #elif (defined __ghs)
 #	define CCTX_COMPILER_GHS
 #elif (defined __sgi)
