@@ -38,7 +38,8 @@ Include cctx_compiler.h and detect the compiler your code is compiled for
  * Watcom C++ http://openwatcom.com/
  * SAS/C https://www.sas.com
  * Greenhills Embedded C++ https://www.ghs.com/ec++.html
- * SGI MIPSpro C++ 
+ * SGI MIPSpro C++
+ * Microsoft Visual Studio Compiler
  
 ## Architecture
 Include cctx_architecture.h and detect the architecture your code is compiled for
