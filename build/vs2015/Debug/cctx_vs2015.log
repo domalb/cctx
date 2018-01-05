@@ -1,2 +1,0 @@
-﻿  cctx_dump_cppcx.cpp
-..\..\src\cctx_dump_cppcx.cpp : fatal error C1107: could not find assembly 'platform.winmd': please specify the assembly search path using /AI or by setting the LIBPATH environment variable
