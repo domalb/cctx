@@ -90,7 +90,7 @@
 #	endif
 #elif ((defined __DS__) || (defined ARM9))
 #	define CCTX_PLATFORM_DS
-#elif ((defined GEKKO) ||(defined __PPCGECKO__)
+#elif ((defined GEKKO) ||(defined __PPCGECKO__))
 #	define CCTX_PLATFORM_GAMECUBE
 #elif (defined __PPCBROADWAY__)
 #	define CCTX_PLATFORM_WII
