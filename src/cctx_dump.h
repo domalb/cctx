@@ -125,8 +125,8 @@
 #	pragma message ("CCTX_COMPILER_CLANG defined")
 #elif defined CCTX_COMPILER_GCC
 #	pragma message ("CCTX_COMPILER_GCC defined")
-#elif defined CCTX_COMPILER_MSVC
-#	pragma message ("CCTX_COMPILER_MSVC defined")
+#elif defined CCTX_COMPILER_MSC
+#	pragma message ("CCTX_COMPILER_MSC defined")
 #elif defined CCTX_COMPILER_BTC
 #	pragma message ("CCTX_COMPILER_BTC defined")
 #elif defined CCTX_COMPILER_BCPP
