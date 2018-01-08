@@ -5,6 +5,15 @@ void cctx_dump(const char* msg)
 {
 	std::cout << msg << std::endl;
 }
+#if (defined CCTX_ARCH_PTR_SIZE_2)
+const char* cctx_arch_size_txt = "2";
+#elif (defined CCTX_ARCH_PTR_SIZE_4)
+const char* cctx_arch_size_txt = "4";
+#elif (defined CCTX_ARCH_PTR_SIZE_8)
+const char* cctx_arch_size_txt = "8";
+#else
+const chat* cctx_arch_size_txt = "undefined";
+#endif
 
 int main()
 {
